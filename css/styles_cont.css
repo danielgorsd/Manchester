@@ -1,0 +1,111 @@
+.form-contacto {
+	width: 90%;
+	min-height: 600px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.email {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 400px;
+	height: 200px;
+	border: 2px solid brown;
+	background-color: white;
+	border-radius: 10px;
+	margin: 20px;
+}
+.email label {
+	width: 80%;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+.email input {
+	width: 80%;
+	height: 30px;
+	border-radius: 10px;
+	border: 2px solid brown;
+	text-align: center;
+}
+.email button {
+	width: 50%;
+	height: 30px;
+	border-radius: 10px;
+	border: 2px solid brown;
+	background-color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+}
+
+.email button:hover {
+	background-color: aqua;
+	transition: 1.5s;
+}
+
+.consulta {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 400px;
+	height: 380px;
+	border: 2px solid brown;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.consulta label {
+	width: 80%;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+.consulta textarea {
+	width: 80%;
+	border: 2px solid brown;
+	text-align: center;
+	border-radius: 10px;
+	color: grey;
+}
+
+.consulta input {
+	width: 80%;
+	height: 30px;
+	border-radius: 10px;
+	border: 2px solid brown;
+	text-align: center;
+}
+.consulta button {
+	width: 50%;
+	height: 30px;
+	border-radius: 10px;
+	border: 2px solid brown;
+	background-color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+}
+.consulta button:hover {
+	background-color: aqua;
+	transition: 1.5s;
+}
+@media only screen and (min-width: 577px) and (max-width: 800px) {
+	.form-contacto {
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.form-contacto {
+		flex-direction: column;
+		margin: 4rem 0;
+		row-gap: 5rem;
+	}
+	.footer {
+		margin-top: 4rem;
+	}
+}
